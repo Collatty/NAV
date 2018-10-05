@@ -1,7 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class validateSocialSecurityNumberTest {
+public class ValidateSocialSecurityNumberTest {
 
 
     @Test //See if length of input gets validated correctly
@@ -12,9 +12,7 @@ public class validateSocialSecurityNumberTest {
             //Pass
         } catch (IllegalArgumentException e) {
             Assert.fail("Should not have thrown IAE!");
-
         }
-
     }
 
     @Test (expected = IllegalArgumentException.class) //See if length of input gets validated correctly
@@ -31,9 +29,7 @@ public class validateSocialSecurityNumberTest {
             //Pass
         } catch (IllegalArgumentException e) {
             Assert.fail("Should not have thrown IAE!");
-
         }
-
     }
 
     @Test (expected = IllegalArgumentException.class) //See if type of input gets validated correctly
@@ -50,9 +46,7 @@ public class validateSocialSecurityNumberTest {
             //Pass
         } catch (IllegalArgumentException e) {
             Assert.fail("Should not have thrown IAE!");
-
         }
-
     }
 
     @Test (expected = IllegalArgumentException.class) //See if birth day gets validated correctly
@@ -69,9 +63,7 @@ public class validateSocialSecurityNumberTest {
             //Pass
         } catch (IllegalArgumentException e) {
             Assert.fail("Should not have thrown IAE!");
-
         }
-
     }
 
     @Test (expected = IllegalArgumentException.class) //See if birth month gets validated correctly
@@ -88,9 +80,7 @@ public class validateSocialSecurityNumberTest {
             //Pass
         } catch (IllegalArgumentException e) {
             Assert.fail("Should not have thrown IAE!");
-
         }
-
     }
 
     @Test //Test corresponding days, months and years
@@ -101,9 +91,7 @@ public class validateSocialSecurityNumberTest {
             //Pass
         } catch (IllegalArgumentException e) {
             Assert.fail("Should not have thrown IAE!");
-
         }
-
     }
 
     @Test //Test corresponding days, months and years
@@ -114,9 +102,7 @@ public class validateSocialSecurityNumberTest {
             //Pass
         } catch (IllegalArgumentException e) {
             Assert.fail("Should not have thrown IAE!");
-
         }
-
     }
 
     @Test //Test corresponding days, months and years
@@ -127,9 +113,7 @@ public class validateSocialSecurityNumberTest {
             //Pass
         } catch (IllegalArgumentException e) {
             Assert.fail("Should not have thrown IAE!");
-
         }
-
     }
 
     @Test (expected = IllegalArgumentException.class) //Test corresponding days, months and years
@@ -158,9 +142,7 @@ public class validateSocialSecurityNumberTest {
             //Pass
         } catch (IllegalArgumentException e) {
             Assert.fail("Should not have thrown IAE!");
-
         }
-
     }
 
     @Test //See if individual numbers are evaluated correctly  -  test for 500-749
@@ -171,9 +153,7 @@ public class validateSocialSecurityNumberTest {
             //Pass
         } catch (IllegalArgumentException e) {
             Assert.fail("Should not have thrown IAE!");
-
         }
-
     }
 
     @Test //See if individual numbers are evaluated correctly  -  test for 750-899
@@ -184,9 +164,7 @@ public class validateSocialSecurityNumberTest {
             //Pass
         } catch (IllegalArgumentException e) {
             Assert.fail("Should not have thrown IAE!");
-
         }
-
     }
 
     @Test (expected = IllegalArgumentException.class) //See if individual numbers are evaluated correctly  -  test for 500-749
@@ -210,9 +188,7 @@ public class validateSocialSecurityNumberTest {
             //Pass
         } catch (IllegalArgumentException e) {
             Assert.fail("Should not have thrown IAE!");
-
         }
-
     }
 
     @Test (expected = IllegalArgumentException.class)  //See if first control cipher is evaluated correctly
@@ -220,7 +196,6 @@ public class validateSocialSecurityNumberTest {
         SocialSecurityNumber invalidSSN = new SocialSecurityNumber("10038749931");
         invalidSSN.validateFirstControlCipher(invalidSSN.getSocialSecurityNumber());
     }
-
 
 
     @Test //See if second control cipher is evaluated correctly
@@ -231,9 +206,7 @@ public class validateSocialSecurityNumberTest {
             //Pass
         } catch (IllegalArgumentException e) {
             Assert.fail("Should not have thrown IAE!");
-
         }
-
     }
 
     @Test (expected = IllegalArgumentException.class) //See if second control cipher is evaluated correctly

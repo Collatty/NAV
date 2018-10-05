@@ -2,7 +2,7 @@
 
 
 
-public class SocialSecurityNumber extends validateSocialSecurityNumber{
+public class SocialSecurityNumber extends ValidateSocialSecurityNumber {
 
     private String socialSecurityNumber;
 

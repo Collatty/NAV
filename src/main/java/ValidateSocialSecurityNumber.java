@@ -5,7 +5,7 @@ import org.apache.commons.lang3.StringUtils;
 
 
 // Abstract in case of reuse and let
-abstract public class validateSocialSecurityNumber {
+abstract public class ValidateSocialSecurityNumber {
 
     //Check if social security number is long enough
     public void validateLength(String socialSecurityNumber){
