@@ -81,7 +81,7 @@ abstract public class validateSocialSecurityNumber {
 
         if ((499 < individualNumbers  && individualNumbers < 750) && ( year < 54 && year > 39 )) {
             throw new IllegalArgumentException("Invalid individual numbers given your birth year!");
-        } else if ((750 < individualNumbers  && individualNumbers < 900) && ( year < 39 )){
+        } else if ((750 < individualNumbers  && individualNumbers < 900) && ( year > 39 )){
             throw new IllegalArgumentException("Invalid individual numbers given your birth year!");
         }
     }
