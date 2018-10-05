@@ -1,4 +1,4 @@
-//Created by Collatty 4/10-2018
+package code;//Created by Collatty 4/10-2018
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -63,10 +63,8 @@ abstract public class ValidateSocialSecurityNumber {
             }
         } else if (day == 30 && month == 2) {
             throw new IllegalArgumentException("Not enough days in that month!");
-        } else if (day == 29 && month == 2 && !isLeapYear){
+        } else if (day == 29 && month == 2 && !isLeapYear) {
             throw new IllegalArgumentException("Not a leap year!");
-        }else if (day == 28 && month != 2) {
-            throw new IllegalArgumentException("Only February contains 28 days!");
         }
 
     }
@@ -132,6 +130,8 @@ abstract public class ValidateSocialSecurityNumber {
     }
 
     public void validateSocialSecurityNumber(String socialSecurityNumber) {
+        validateLength(socialSecurityNumber);
+        validateNumeric(socialSecurityNumber);
         validateBirthDate(socialSecurityNumber);
         validatePersonalNumber(socialSecurityNumber);
     }
