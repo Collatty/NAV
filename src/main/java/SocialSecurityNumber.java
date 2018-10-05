@@ -11,9 +11,8 @@ public class SocialSecurityNumber extends validateSocialSecurityNumber{
 
     }
 
-    public static void main(String[] args) {
-        SocialSecurityNumber socialSecurityNumber = new SocialSecurityNumber("30049434959      ");
-        socialSecurityNumber.validateSocialSecurityNumber(socialSecurityNumber.socialSecurityNumber);
-
+    public String getSocialSecurityNumber(){
+        return this.socialSecurityNumber;
     }
+
 }
