@@ -1,10 +1,10 @@
 # Kodeoppgave for NAV
 
-##Kilder
+## Kilder
 
 Jeg har tatt utgangspunkt i informasjonen om fødselsnummer på [Wikipedia](https://no.wikipedia.org/wiki/F%C3%B8dselsnummer)
 for å utvikle kravene mine til fødselsnummeret.
 
-##Teknologi
+## Teknologi
 
 Skrevet i Java med IntelliJ IDEA som utviklingverktøy.  
