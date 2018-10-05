@@ -1,0 +1,16 @@
+#header {
+  color: teal;
+  font-size: 3.2vw;
+  margin-top: 50px;
+}
+
+#input {
+  align-items: center;
+  margin-top: 60px;
+  width: 79%;
+}
+
+#container {
+  margin-left: 200px;
+  margin-right: 200px;
+}
