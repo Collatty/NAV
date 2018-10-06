@@ -2,15 +2,23 @@
   color: teal;
   font-size: 3.2vw;
   margin-top: 50px;
+  text-align: center;
 }
 
 #input {
-  align-items: center;
   margin-top: 60px;
-  width: 79%;
+
+}
+
+#ssn {
+  align-self: center;
 }
 
 #container {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+button {
+  margin: 0 auto;
 }
