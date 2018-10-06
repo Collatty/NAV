@@ -14,7 +14,7 @@ class App extends Component {
 
   }
   handleClick () {
-    axios.post("/validate", {socialSecurityNumber: document.getElementById("ssn").value })
+    axios.post("/validate", {"socialSecurityNumber": document.getElementById("ssn").value})
         .then(res => this.setState({status: res.data.status}))
   }
 
