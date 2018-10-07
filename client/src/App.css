@@ -1,17 +1,13 @@
 #header {
   color: teal;
   font-size: 3.2vw;
-  margin-top: 50px;
+  margin-top: 100px;
   text-align: center;
 }
 
 #input {
-  margin-top: 60px;
+  margin-top: 50px;
 
-}
-
-#ssn {
-  align-self: center;
 }
 
 #container {
@@ -19,6 +15,36 @@
   margin-right: 150px;
 }
 
-button {
+#button {
   margin: 0 auto;
+  display: block;
 }
+
+/* label color */
+.input-field label {
+  color: black;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: black;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid black;
+  box-shadow: 0 1px 0 0 yellow;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid indigo;
+  box-shadow: 0 1px 0 0 orange;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid deeppink;
+  box-shadow: 0 1px 0 0 red;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: blue;
+}
+
