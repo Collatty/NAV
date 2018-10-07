@@ -3,25 +3,28 @@ import "./App.css";
 import axios from "axios";
 
 class App extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
 
     this.state = {
       status: ''
-    }
+    };
 
     this.handleClick=this.handleClick.bind(this);
     this.handleChange=this.handleChange.bind(this);
 
   }
-  handleClick () {
-    axios.get("/validate", {params: {"socialSecurityNumber": document.getElementById("ssn").value}})
-        .then(res => this.setState({status: res.data.status}))
+  async handleClick () {
+      const res = await axios.get("/validate", {params: {"socialSecurityNumber": document.getElementById("ssn").value}});
+      this.setState({status: res.data});
+
   }
 //In case of continuous validation checkge. Call this on inputs onChange.
   handleChange() {
       axios.get("/validate", {params: {"socialSecurityNumber": document.getElementById("ssn").value}})
-          .then(res => this.setState({status: res.data.status}))
+          .then(function (response) {
+              console.log(response.data)
+          });
   }
 
   render() {
